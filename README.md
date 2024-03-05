@@ -39,6 +39,10 @@ To use the annotation tool, follow these steps:
 
 ## Demo
 
+![Demo Video](static/images/demo.mp4)
+
+Click on the image above to watch the demo video.
+
 ## Contributing
 
 Contributions to the project are welcome! If you find any bugs or have suggestions for new features, please open an issue or submit a pull request.

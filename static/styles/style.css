@@ -15,7 +15,7 @@ h1 {
   align-items: center;
   font-weight: 700px;
   font-size: 2.5rem;
-  font-family: Poppins,sans-serif;
+  font-family: Poppins, sans-serif;
   box-shadow: 1px 3px lightblue;
 }
 
@@ -58,9 +58,9 @@ canvas {
   display: block;
   margin: 0 auto;
   border: 2px solid black;
-  
+
   /* padding-left: 20%; */
-  
+
 
 }
 
