@@ -39,7 +39,7 @@ To use the annotation tool, follow these steps:
 
 ## Demo
 
-![Demo Video](static/images/demo.mp4)
+![Demo Video](static/images/demo.gif)
 
 Click on the image above to watch the demo video.
 
