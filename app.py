@@ -1,6 +1,6 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, send_from_directory, send_file
 import os
-
+from flask import redirect, url_for
 
 app = Flask(__name__)
 
@@ -22,8 +22,10 @@ def index():
         
 @app.route('/upload', methods=['POST'])
 def upload():
+    
     if 'file' not in request.files:
         return jsonify({'error': 'No file part'})
+        
     
     file = request.files['file']
     
@@ -38,7 +40,8 @@ def upload():
 
         file.save(image_path)
         print("Image saved at:", image_path) 
-        return jsonify({'success': True, 'filename': filename})
+        # return jsonify({'success': True})
+        return render_template('alert.html', message='Image uploaded successfully!')
     
     return jsonify({'error': 'Invalid file format'})
 
@@ -66,6 +69,7 @@ def save_annotation():
             f.write(line)
             
     return jsonify({'success': True})
+
 
 if __name__ == '__main__':
     app.run(debug=True)
